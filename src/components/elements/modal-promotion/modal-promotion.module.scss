@@ -1,0 +1,143 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: $transition;
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.content {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  position: relative;
+  z-index: 2;
+}
+.closeBtn {
+  margin: 0 0 2rem auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.body {
+  padding: 7rem 1.5rem;
+  max-width: 35rem;
+  position: relative;
+  aspect-ratio: 1 / 1.5;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.title {
+  margin-bottom: 1rem;
+  color: #f1ede4;
+  text-align: center;
+  font-family: var(--font-kashima);
+  font-size: 4rem;
+  line-height: 80%; /* 3.9011rem */
+}
+.description {
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 130%; /* 1.56rem */
+  text-transform: uppercase;
+}
+.link {
+  padding: 1rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+  margin-bottom: 1.5rem;
+  background: #c00a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 130%; /* 1.3rem */
+  text-transform: uppercase;
+}
+.closeLink {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  color: #828282;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 130%; /* 1.3rem */
+  text-transform: uppercase;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  background: #070707;
+  z-index: 1;
+}
+@media (min-width: $breakpoint-md) {
+  .modal {
+    padding: 3rem;
+  }
+  .closeBtn {
+    margin-bottom: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .body {
+    max-width: 65rem;
+    padding: 14rem 3.5rem;
+  }
+  .title {
+    margin-bottom: 3rem;
+    font-size: 8.2rem;
+  }
+  .description {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+  }
+  .link {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    height: 7rem;
+    border-radius: 3.5rem;
+  }
+  .closeLink {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+}

@@ -1,0 +1,68 @@
+.info {
+  padding: 1rem 1.5rem 1.5rem;
+}
+.minOrder {
+  color: #b5b5b5;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+.freeOrder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1d1d1b;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.total {
+  border-radius: 1rem 1rem 0 0;
+  background: #891812;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.totalTitle {
+  color: #fbfbfb;
+  font-family: var(--font-kashima);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.totalValue {
+  color: #f1ede4;
+  text-align: right;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .info {
+    padding: 1.7rem 3.5rem 2.5rem;
+  }
+  .freeOrder {
+    font-size: 1.4rem;
+  }
+  .total {
+    padding: 2.2rem 3.5rem;
+  }
+  .totalTitle {
+    font-size: 4.5rem;
+  }
+  .totalValue {
+    font-size: 2rem;
+  }
+}

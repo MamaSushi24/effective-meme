@@ -1,0 +1,16 @@
+import clsx from 'clsx';
+
+import styles from './{{dashCase name}}.module.scss'; 
+import  Container  from '@/components/elements/container/container';
+interface {{pascalCase name}}Props {
+  className?: string;
+}
+export default function {{pascalCase name}}({className}:{{pascalCase name}}Props): JSX.Element { 
+  return (
+<section className={clsx(styles.root, 'section', className)}>
+  <Container>
+    <h2 className={clsx(styles.title, 'h2')}> {{pascalCase name}} </h2>
+  </Container>
+</section>
+); 
+}

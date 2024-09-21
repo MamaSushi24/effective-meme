@@ -1,0 +1,79 @@
+.field {
+  position: relative;
+}
+
+.input {
+  border-radius: 6.0041rem;
+  border: 0.6px solid #f1ede4;
+  width: 100%;
+  background-color: transparent;
+  padding: 0.6004rem 2.4017rem;
+  height: 3rem;
+  border-radius: 7.5rem;
+  color: #f1ede4;
+  font-family: var(--font-montserrat, 'sans-serif');
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  user-select: none;
+  -moz-appearance: textfield;
+  &:focus {
+    outline: none;
+    user-select: none;
+  }
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f1ede4;
+  font-family: var(--font-montserrat, 'sans-serif');
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  height: 100%;
+  z-index: 1;
+  padding: 0rem 2.4017rem;
+  &.decrement {
+    text-align: left;
+    left: 0;
+  }
+  &.increment {
+    text-align: right;
+    right: 0;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .input {
+    font-size: 1.5rem;
+  }
+  .button {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .input {
+    padding: 0.6004rem 2.4017rem;
+    height: 5.4937rem;
+    border-radius: 10.5649rem;
+    font-size: 1.9017rem;
+  }
+  .button {
+    padding: 0rem 2.4017rem;
+    font-size: 1.9017rem;
+  }
+}

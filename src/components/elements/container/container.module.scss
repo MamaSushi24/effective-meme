@@ -1,0 +1,16 @@
+.container {
+  padding: 0 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: $breakpoint-md) {
+  .container {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .container {
+    padding: 0 9.2rem;
+  }
+}

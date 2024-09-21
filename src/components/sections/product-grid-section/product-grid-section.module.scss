@@ -1,0 +1,24 @@
+.section {
+  padding-top: 5rem;
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: $breakpoint-md) {
+  .section {
+    padding-top: 10rem;
+  }
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}

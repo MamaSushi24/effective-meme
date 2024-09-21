@@ -1,0 +1,139 @@
+.delivery {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.header {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 0;
+}
+
+.body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 2rem 1.5rem 0.5rem;
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #c00a00;
+    border-radius: 1rem;
+  }
+}
+
+.group {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.groupTitle {
+  color: #b5b5b5;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.row {
+  display: grid;
+  gap: 1.5rem;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  &.full {
+    grid-template-columns: 1fr;
+  }
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+.text {
+  color: #b5b5b5;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  p {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.btnWrap {
+  display: grid;
+  gap: 1rem;
+}
+
+.minOrder {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.error {
+  text-align: center;
+  color: #c00a00;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .delivery {
+    padding-bottom: 3.5rem;
+  }
+  .header {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .body {
+    padding: 3.5rem 3.5rem 0.5rem;
+  }
+
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+  .group {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+  .groupTitle {
+    font-size: 1.4rem;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+  .list {
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .error {
+    font-size: 1.4rem;
+  }
+}

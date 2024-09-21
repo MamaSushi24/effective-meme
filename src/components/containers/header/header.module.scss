@@ -1,0 +1,92 @@
+.header {
+  padding: 2rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  display: block;
+  margin-right: auto;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.48rem;
+  color: #f1ede4;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  svg {
+    width: 0.8rem;
+    height: auto;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .logo {
+    width: 8rem;
+    height: 8rem;
+  }
+  .location {
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: 4rem;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .header {
+    padding-top: 5rem;
+    padding-left: 20rem;
+  }
+  .nav {
+    display: flex;
+    gap: 7.5rem;
+  }
+  .link {
+    color: #f1ede4;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(100% + 0.2rem);
+      left: 0;
+      width: 0;
+      transition: 0.4s;
+      border-bottom: 0.1rem solid #f1ede4;
+    }
+    &:hover,
+    &.active {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  .location {
+    font-size: 1.6rem;
+    margin-right: 7.5rem;
+    svg {
+      width: 1.4rem;
+    }
+  }
+}

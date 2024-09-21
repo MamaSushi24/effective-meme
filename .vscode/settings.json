@@ -1,0 +1,4 @@
+{
+  "eslint.validate": ["glimmer-ts", "glimmer-js"],
+  "i18n-ally.localesPaths": ["public/locales"]
+}

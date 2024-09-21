@@ -1,0 +1,56 @@
+.card {
+  display: block;
+}
+
+.img {
+  position: relative;
+  display: block;
+  aspect-ratio: 290 / 285;
+  img {
+    object-fit: cover;
+  }
+}
+
+.title {
+  color: #f1ede4;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: #c00a00;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (min-width: $breakpoint-md) {
+  .img {
+    aspect-ratio: 355 / 202;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .link {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .img {
+    aspect-ratio: 1767/736;
+  }
+  .title {
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .link {
+    font-size: 1.8rem;
+  }
+}

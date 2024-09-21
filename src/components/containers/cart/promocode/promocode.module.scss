@@ -1,0 +1,85 @@
+.promoCode {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.promoCodeCol {
+  position: relative;
+}
+
+.promoCodeError {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  color: #891812;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.promoCodeOk {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  color: #02aa45;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.promoCodeInput {
+  border: none;
+  border-bottom: 1px solid #b5b5b5;
+  border-radius: 0;
+  height: auto;
+  padding: 0 0 1rem;
+  color: #1d1d1b;
+  font-family: var(--font-montserrat, 'sans-serif');
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 100%;
+  transition: 0.3s;
+  &::placeholder {
+    color: #b5b5b5;
+  }
+  &:focus {
+    outline: none;
+  }
+  &.error {
+    border-color: #891812;
+    color: #891812;
+    &::placeholder {
+      color: #891812;
+    }
+  }
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.promoCodeButton {
+  width: 100%;
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .promoCode {
+    margin-bottom: 3rem;
+  }
+  .promoCodeInput {
+    font-size: 1.3rem;
+  }
+}

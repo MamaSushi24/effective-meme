@@ -1,0 +1,27 @@
+.button {
+  padding: 0.6861rem 1.7154rem;
+  border-radius: 4.5495rem;
+  border: 0.455px solid #f1ede4;
+  color: #f1ede4;
+  font-size: 1.0292rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: 0.3s;
+  &.active {
+    border-radius: 4.5495rem;
+    color: #c00a00;
+    border: 0.455px solid #c00a00;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .button {
+    padding: 1.2rem 3rem;
+    font-size: 1.8rem;
+    border-radius: 7.9567rem;
+  }
+}

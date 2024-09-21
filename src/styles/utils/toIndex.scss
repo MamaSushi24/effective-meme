@@ -1,0 +1,6 @@
+@function toIndex($value) {
+  $resValue: calc(
+    (var(--vw, 1vw) + var(--vh, 1vh)) * (#{$value} / var(--toIndex, 30))
+  );
+  @return $resValue;
+}

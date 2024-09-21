@@ -1,0 +1,76 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+@import './utils/toIndex.scss';
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-montserrat);
+  background: #0f0f0f;
+  @media (max-width: 767px) {
+    &.no-scroll {
+      overflow: hidden;
+    }
+  }
+}
+
+:root {
+  // Responsive font-size
+
+  // --toIndex: 10.89; //MOBILE COEF for 375w
+  $mobile: 10 / 3.2 * 1vw;
+  $tablet: 10 / 7.68 * 1vw;
+  font-size: $mobile;
+  @media (min-width: $breakpoint-md) {
+    font-size: $tablet;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    --toIndex: 30; //Desktop coef for 1920w
+    font-size: toIndex(10);
+  }
+}
+
+// swiper start
+.swiper-pagination {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.14rem;
+  @media (min-width: $breakpoint-xl) {
+    margin-top: 4.8rem;
+    gap: 2rem;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 0.6545rem;
+  height: 0.6545rem;
+  opacity: 0.4;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  &.swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 1.1571rem;
+    height: 1.1571rem;
+  }
+}
+// swiper end
+
+// section start
+.section {
+  padding: 5rem 0;
+  @media (min-width: $breakpoint-md) {
+    padding: 10rem 0;
+  }
+  @media (min-width: $breakpoint-xl) {
+    padding: 12.5rem 0;
+  }
+}
+// section end

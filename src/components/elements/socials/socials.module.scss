@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 0.92rem;
+  a {
+    width: 1.8779rem;
+    height: 1.8779rem;
+    display: block;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .socials {
+    gap: 1.23rem;
+    a {
+      width: 3.2842rem;
+      height: 3.2842rem;
+    }
+  }
+}

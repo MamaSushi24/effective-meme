@@ -1,0 +1,178 @@
+.section {
+  &:not(.single) {
+    padding-top: 10rem;
+  }
+  &.single {
+    .iframe {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.title {
+  color: #f1ede4;
+  text-align: center;
+  font-family: var(--font-kashima);
+  font-size: 7.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 80%;
+  position: relative;
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 128%;
+  z-index: -1;
+}
+
+.iframe {
+  position: relative;
+  height: 60vh;
+  margin-bottom: 5rem;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.infoTitle {
+  color: rgba(#f1ede4, 0.4);
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.infoList {
+  margin-bottom: 4rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.zone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.zoneColor {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+}
+
+.zoneText {
+  color: #f1ede4;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 2.16rem */
+  white-space: pre-line;
+}
+
+.infoText {
+  color: #f1ede4;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 2.16rem */
+}
+
+@media (min-width: $breakpoint-md) {
+  .section {
+    &:not(.single) {
+      padding-top: 12.5rem;
+    }
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .title {
+    font-size: 15.5rem;
+    display: inline-block;
+  }
+  .iframe {
+    margin-bottom: 5rem;
+  }
+  .info {
+    margin: 0 auto;
+    max-width: 35rem;
+  }
+  .infoTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .zoneText {
+    font-size: 1.5rem;
+  }
+  .infoText {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .section {
+    &:not(.single) {
+      padding-top: 20rem;
+    }
+  }
+
+  .header {
+    margin-bottom: 10rem;
+  }
+
+  .title {
+    font-size: 30rem;
+  }
+
+  .icon {
+    width: 146%;
+  }
+
+  .iframe {
+    margin-bottom: 12.5rem;
+  }
+
+  .info {
+    max-width: 48rem;
+  }
+  .infoTitle {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+  .infoList {
+    gap: 1.5rem;
+    margin-bottom: 8rem;
+  }
+  .zone {
+    gap: 2.5rem;
+  }
+  .zoneText {
+    font-size: 1.8rem;
+  }
+  .zoneColor {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .infoText {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    display: flex;
+  }
+}

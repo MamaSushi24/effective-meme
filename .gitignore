@@ -1,0 +1,19 @@
+build
+dist
+/storage
+node_modules
+.DS_Store
+.next
+.vercel
+.env
+ngrok.exe
+
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+yarn-error.log

@@ -1,0 +1,10 @@
+export enum DiscountMethod {
+  CODE = 'CODE',
+  AUTOMATIC = 'AUTOMATIC',
+}
+export enum DiscountType {
+  AMOUNT_OFF_PRODUCTS = 'AMOUNT_OFF_PRODUCTS',
+  BUY_X_GET_Y = 'BUY_X_GET_Y',
+  AMOUNT_OFF_ORDER = 'AMOUNT_OFF_ORDER',
+  FREE_DELIVERY = 'FREE_DELIVERY',
+}

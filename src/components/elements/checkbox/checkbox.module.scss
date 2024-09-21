@@ -1,0 +1,67 @@
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  &.error {
+    .label {
+      color: #c00a00;
+    }
+  }
+}
+
+.input {
+  display: none;
+  &:checked ~ .checkmark {
+    background: #c00a00;
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+.checkmark {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid #c00a00;
+  flex-shrink: 0;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 0.7rem;
+    height: auto;
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+
+.label {
+  color: #b5b5b5;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .wrap {
+    gap: 1.2rem;
+  }
+  .checkmark {
+    width: 2.2rem;
+    height: 2.2rem;
+    svg {
+      width: 1.1rem;
+    }
+  }
+  .label {
+    font-size: 1.3rem;
+  }
+}

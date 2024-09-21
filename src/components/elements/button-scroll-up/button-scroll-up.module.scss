@@ -1,0 +1,30 @@
+.button {
+  position: fixed;
+  bottom: 9rem;
+  right: 2rem;
+  z-index: 9;
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+  @media (hover: hover) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .button {
+    width: 7rem;
+    height: 7rem;
+    bottom: 3rem;
+    right: 3rem;
+  }
+}

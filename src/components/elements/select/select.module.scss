@@ -1,0 +1,42 @@
+.wrap {
+  position: relative;
+}
+
+.label {
+  display: block;
+  color: #b5b5b5;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.select {
+  width: 100%;
+  color: #b5b5b5;
+  font-family: var(--font-montserrat, 'sans-serif');
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  border: none;
+  border-bottom: 1px solid #b5b5b5;
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .label {
+    font-size: 1.4rem;
+  }
+  .select {
+    font-size: 1.4rem;
+  }
+}

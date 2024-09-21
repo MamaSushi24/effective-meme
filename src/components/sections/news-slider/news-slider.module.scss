@@ -1,0 +1,21 @@
+.link {
+  display: block;
+  width: 100%;
+}
+
+.img {
+  display: block;
+  position: relative;
+  aspect-ratio: 290 / 285;
+}
+
+@media (min-width: $breakpoint-md) {
+  .img {
+    aspect-ratio: 1767/736;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .container {
+    padding: 0;
+  }
+}

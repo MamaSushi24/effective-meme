@@ -1,0 +1,13 @@
+.inner {
+  padding-bottom: 7.8rem;
+  overflow: hidden;
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .inner {
+    padding-bottom: 0;
+    padding-left: 16.3rem;
+  }
+}

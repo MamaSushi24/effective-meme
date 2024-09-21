@@ -1,0 +1,33 @@
+.item {
+  display: inline;
+  color: rgba(#f1ede4, 0.4);
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  &:not(:last-child) {
+    &::after {
+      content: '/';
+      margin: 0 0.25rem;
+    }
+  }
+}
+
+.link {
+  color: rgba(#f1ede4, 0.4);
+  transition: 0.3s;
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+}
+@media (min-width: $breakpoint-xl) {
+  .item {
+    font-size: 1.6rem;
+  }
+  .link {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,82 @@
+.cartButton {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: #121212;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 14rem;
+  right: 0;
+  z-index: 10;
+  svg {
+    width: 1.8rem;
+  }
+  span {
+    background-color: #891812;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -1rem;
+    left: -0.6rem;
+    color: #e7dec6;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 11;
+  min-height: 100dvh;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  transform-origin: top right;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+@media (min-width: $breakpoint-md) {
+  .cart {
+    width: 58.2rem;
+    height: 100%;
+    top: 13rem;
+    min-height: unset;
+    max-height: calc(100% - 34rem);
+    border-radius: 1rem;
+  }
+}
+@media (min-width: $breakpoint-xl) {
+  .cartButton {
+    width: 5.5rem;
+    height: 5.5rem;
+    svg {
+      width: 2.5rem;
+    }
+    span {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+    }
+  }
+  .body {
+    padding: 0 3.5rem 0rem;
+    // max-height: calc(100dvh - 18.1rem - 25rem);
+  }
+}

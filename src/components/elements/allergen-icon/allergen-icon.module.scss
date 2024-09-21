@@ -1,0 +1,12 @@
+.allergen {
+  position: relative;
+  width: 4.5rem;
+  height: 2rem;
+}
+
+@media (min-width: $breakpoint-xl) {
+  .allergen {
+    width: 7rem;
+    height: 4rem;
+  }
+}
